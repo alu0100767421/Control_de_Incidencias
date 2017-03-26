@@ -9,7 +9,7 @@ Server::Server(QString dir, quint16 port, QObject *parent) :
 {
 
     db = new QSqlDatabase(QSqlDatabase::addDatabase("QSQLITE", "SQLITE"));
-    db->setDatabaseName("incidencias.db");
+    db->setDatabaseName("C:/INCIDENCIAS/BBDD/incidencias.db");
 
 
     if(!db->open()){
@@ -18,21 +18,13 @@ Server::Server(QString dir, quint16 port, QObject *parent) :
         exit(1);
     }
     servidor = new SslServer(dir_,port_,db,this);
-/*
-    QSqlQuery query(*db);
-
-    query.exec("CREATE TABLE IF NOT EXIST login "
-                "(usuario VARCHAR(50) PRIMARY KEY,"
-                " password VARCHAR(50) NOT NULL,"
-                " ip VARCHAR(20) NOT NULL,"
-                " port INTEGER NOT NULL))");
-*/
 }
 
 void Server::start()
 {
     servidor->listen(QHostAddress(dir_), port_);
     qDebug() << "Listening...";
+    qDebug() << "Dir: " << dir_;
     qDebug() << "Port: " << port_;
 }
 

@@ -29,10 +29,11 @@ void SslServer::incomingConnection(qintptr socketDescriptor){
     QSslSocket* socket = new QSslSocket();
 
     if(socket->setSocketDescriptor(socketDescriptor)){
+
         connect(socket, SIGNAL(sslErrors(QList<QSslError>)), socket, SLOT(ignoreSslErrors()));
-        socket->setProtocol(QSsl::TlsV1_1);
-        socket->setPrivateKey("Cert/server.key");
-        socket->setLocalCertificate("Cert/server.crt");
+        socket->setProtocol(QSsl::AnyProtocol);
+        socket->setPrivateKey("C:/INCIDENCIAS/CERT_INCIDENCIAS/server.key");
+        socket->setLocalCertificate("C:/INCIDENCIAS/CERT_INCIDENCIAS/server.crt");
         socket->ignoreSslErrors();
 
         std::cout << "New conecction" << std::endl;

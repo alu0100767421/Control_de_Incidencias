@@ -17,6 +17,7 @@
 #include <QFile>
 #include <QTextStream>
 #include <QVector>
+#include <QList>
 
 
 #include "direcciones.h"
@@ -27,6 +28,8 @@ class Client : public QObject
 public:
     explicit Client(QSslSocket* sslSocket, QSqlDatabase *db, QObject *parent = 0);
     Direcciones deserializar();
+    void enviar(QSslSocket* socket, QByteArray bytes);
+    QByteArray serializar(QString ip, QString equipo, QString ubicacion, quint16 subred, quint16 type);
     ~Client();
 
 signals:

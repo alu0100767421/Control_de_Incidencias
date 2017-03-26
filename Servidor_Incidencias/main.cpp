@@ -26,8 +26,8 @@ int main(int argc, char *argv[])
 
 
     quint16 port;
-    port = 5000;
-    QString ip_option = "127.0.0.1";
+    port = 9000;
+    QString ip_option = "192.168.1.100";
 
     Server server(ip_option, port);
     server.start();
