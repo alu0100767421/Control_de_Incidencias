@@ -22,6 +22,9 @@
 
 #include "direcciones.h"
 
+
+static QMap<QString, QSslSocket*> listPC;
+
 class Client : public QObject
 {
     Q_OBJECT
@@ -30,6 +33,7 @@ public:
     Direcciones deserializar();
     void enviar(QSslSocket* socket, QByteArray bytes);
     QByteArray serializar(QString ip, QString equipo, QString ubicacion, quint16 subred, quint16 type);
+    QByteArray serializar(QString ip, QString equipo, QString ubicacion, quint16 subred, QString marca , QString modelo ,quint16 type);
     ~Client();
 
 signals:

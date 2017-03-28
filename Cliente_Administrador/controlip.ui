@@ -11,7 +11,11 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Control de IP</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/Images/escudo.png</normaloff>:/Images/escudo.png</iconset>
   </property>
   <widget class="QWidget" name="verticalLayoutWidget_2">
    <property name="geometry">
@@ -33,7 +37,7 @@
         <rect>
          <x>10</x>
          <y>30</y>
-         <width>341</width>
+         <width>348</width>
          <height>51</height>
         </rect>
        </property>
@@ -432,6 +436,8 @@
    </layout>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

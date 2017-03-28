@@ -3,5 +3,7 @@
         <file>Images/ips.jpg</file>
         <file>Images/incidencia.jpg</file>
         <file>Images/impresora.jpg</file>
+        <file>Images/escudo.png</file>
+        <file>Images/cartucho-tinta.jpg</file>
     </qresource>
 </RCC>

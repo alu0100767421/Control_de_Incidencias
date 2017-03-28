@@ -2,7 +2,15 @@
 
 Direcciones::Direcciones()
 {
+    type_ = 100;
+    m_ip = "";
+    m_equipo = "";
+    m_ubicacion = "";
+    m_subred = 0;
 
+   //IMPRESORAS
+    m_modelo = "";
+    m_marca = "";
 }
 
 QString Direcciones::ip() const
@@ -54,3 +62,25 @@ void Direcciones::setSubred(const quint16 &subred)
 {
     m_subred = subred;
 }
+
+/****impresoras*****/
+QString Direcciones::marcaImpresora() const
+{
+    return m_marca;
+}
+
+QString Direcciones::modeloImpresora() const
+{
+    return m_modelo;
+}
+
+void Direcciones::setMarcaImpresora(const QString &marca)
+{
+    m_marca = marca;
+}
+
+void Direcciones::setModeloImpresora(const QString &modelo)
+{
+    m_modelo = modelo;
+}
+/***********/

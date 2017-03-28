@@ -36,8 +36,6 @@ void SslServer::incomingConnection(qintptr socketDescriptor){
         socket->setLocalCertificate("C:/INCIDENCIAS/CERT_INCIDENCIAS/server.crt");
         socket->ignoreSslErrors();
 
-        std::cout << "New conecction" << std::endl;
-
         Client *client = new Client(socket, db, this);
         socket->startServerEncryption();
     }

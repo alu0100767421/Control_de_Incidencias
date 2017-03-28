@@ -1,16 +1,17 @@
 #include "controlip.h"
 #include "ui_controlip.h"
 
-ControlIp::ControlIp(SocketTcp* socket, QWidget *parent) :
-    QWidget(parent),
+ControlIp::ControlIp(SocketTcp* socket ,QDialog *parent) :
+    QDialog(parent),
     socket_(socket),
     tamPacket(0),
+    ip(socket->ip_local),
     ui(new Ui::ControlIp)
 {
     ui->setupUi(this);
     connect(socket_->sslSocket, SIGNAL(readyRead()), this, SLOT(readyRead()));
     //TODO: CONECTAR SEÑAL PARA CERRAR EL SOCKET CUANDO SE CIERRE.
-    //connect(this, SIGNAL(re))
+    connect(this, SIGNAL(rejected()), this, SLOT(cerrar()));
 }
 
 ControlIp::~ControlIp()
@@ -257,6 +258,12 @@ void ControlIp::readyRead()
 
 
     }
+}
+
+void ControlIp::cerrar()
+{
+    QByteArray bytes = serializar(ip+"_IP", "", "", 0, 11);
+    enviar(socket_, bytes);
 }
 
 

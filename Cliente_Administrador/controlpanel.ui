@@ -23,7 +23,11 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>ControlPanel</string>
+   <string>Panel de Control</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/Images/escudo.png</normaloff>:/Images/escudo.png</iconset>
   </property>
   <property name="windowOpacity">
    <double>1.000000000000000</double>
@@ -180,7 +184,7 @@
      <x>0</x>
      <y>0</y>
      <width>1031</width>
-     <height>21</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>

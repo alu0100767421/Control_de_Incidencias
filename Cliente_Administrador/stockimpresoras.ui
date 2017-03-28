@@ -1,0 +1,973 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StockImpresoras</class>
+ <widget class="QDialog" name="StockImpresoras">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>352</width>
+    <height>606</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>352</width>
+    <height>606</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>352</width>
+    <height>606</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Stock de Tinta</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/Images/cartucho-tinta.jpg</normaloff>:/Images/cartucho-tinta.jpg</iconset>
+  </property>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>520</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="2">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="0" column="1">
+     <widget class="QComboBox" name="tintasBox">
+      <item>
+       <property name="text">
+        <string>727C</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>727K</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>727M</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>727Y</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>82C</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>82K</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>82M</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>82Y</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TN210C</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TN210K</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TN210M</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TN210Y</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TN211C</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TN211K</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TN211M</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TN211Y</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TN213C</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TN213K</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TN213M</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TN213Y</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TN216C</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TN216K</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TN216M</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TN216Y</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TN321C</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TN321K</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TN321M</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TN321Y</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TN611C</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TN611K</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TN611M</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TN611Y</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TNP22C</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TNP22K</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TNP22M</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TNP22Y</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TNP44C</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TNP44K</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TNP44M</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TNP44Y</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_41">
+      <property name="text">
+       <string>Modelo</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="gridLayoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>560</y>
+     <width>306</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_4">
+    <item row="0" column="3">
+     <widget class="QPushButton" name="addStockButton">
+      <property name="text">
+       <string>Añadir</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QSpinBox" name="cantidadSpinBox"/>
+    </item>
+    <item row="0" column="2">
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_42">
+      <property name="text">
+       <string>Cantidad</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="4">
+     <widget class="QPushButton" name="delStockButton">
+      <property name="text">
+       <string>Eliminar</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>331</width>
+     <height>501</height>
+    </rect>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>329</width>
+      <height>499</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="gridLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>311</width>
+       <height>483</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="14" column="0">
+       <widget class="QLabel" name="label_44">
+        <property name="text">
+         <string>TN211K</string>
+        </property>
+       </widget>
+      </item>
+      <item row="15" column="0">
+       <widget class="QLabel" name="label_45">
+        <property name="text">
+         <string>TN211M</string>
+        </property>
+       </widget>
+      </item>
+      <item row="16" column="0">
+       <widget class="QLabel" name="label_46">
+        <property name="text">
+         <string>TN211Y</string>
+        </property>
+       </widget>
+      </item>
+      <item row="17" column="0">
+       <widget class="QLabel" name="label_47">
+        <property name="text">
+         <string>TN213C</string>
+        </property>
+       </widget>
+      </item>
+      <item row="18" column="0">
+       <widget class="QLabel" name="label_48">
+        <property name="text">
+         <string>TN213K</string>
+        </property>
+       </widget>
+      </item>
+      <item row="19" column="0">
+       <widget class="QLabel" name="label_49">
+        <property name="text">
+         <string>TN213M</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1">
+       <widget class="QLabel" name="TINTA9">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="1">
+       <widget class="QLabel" name="TINTA11">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QLabel" name="label_32">
+        <property name="text">
+         <string>TN216Y</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="2">
+       <widget class="QLabel" name="label_37">
+        <property name="text">
+         <string>TN611C</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLabel" name="TINTA5">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="label_29">
+        <property name="text">
+         <string>TN216C</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLabel" name="label_30">
+        <property name="text">
+         <string>TN216K</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QLabel" name="TINTA6">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLabel" name="TINTA4">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="2">
+       <widget class="QLabel" name="label_35">
+        <property name="text">
+         <string>TN321M</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="2">
+       <widget class="QLabel" name="label_36">
+        <property name="text">
+         <string>TN321Y</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="1">
+       <widget class="QLabel" name="TINTA10">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLabel" name="label_31">
+        <property name="text">
+         <string>TN216M</string>
+        </property>
+       </widget>
+      </item>
+      <item row="12" column="2">
+       <widget class="QLabel" name="label_40">
+        <property name="text">
+         <string>TN611Y</string>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="2">
+       <widget class="QLabel" name="label_39">
+        <property name="text">
+         <string>TN611M</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="label_11">
+        <property name="text">
+         <string>82M</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_10">
+        <property name="text">
+         <string>82K</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>727Y</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_9">
+        <property name="text">
+         <string>82C</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="3">
+       <widget class="QLabel" name="TINTA23">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QLabel" name="TINTA21">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string>727M</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QLabel" name="TINTA22">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QLabel" name="TINTA7">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>727C</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1">
+       <widget class="QLabel" name="TINTA8">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="label_3">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QLabel" name="label_5">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLabel" name="TINTA3">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>727K</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="label_4">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>TINTA</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="3">
+       <widget class="QLabel" name="TINTA24">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="2">
+       <widget class="QLabel" name="label_34">
+        <property name="text">
+         <string>TN321K</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLabel" name="TINTA1">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="2">
+       <widget class="QLabel" name="label_33">
+        <property name="text">
+         <string>TN321C</string>
+        </property>
+       </widget>
+      </item>
+      <item row="12" column="3">
+       <widget class="QLabel" name="TINTA32">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="3">
+       <widget class="QLabel" name="TINTA27">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="3">
+       <widget class="QLabel" name="TINTA28">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="3">
+       <widget class="QLabel" name="TINTA26">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="3">
+       <widget class="QLabel" name="TINTA25">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="3">
+       <widget class="QLabel" name="TINTA30">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="3">
+       <widget class="QLabel" name="TINTA31">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>TINTA</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="3">
+       <widget class="QLabel" name="TINTA29">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="0">
+       <widget class="QLabel" name="label_15">
+        <property name="text">
+         <string>TN210M</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLabel" name="TINTA2">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <widget class="QLabel" name="label_12">
+        <property name="text">
+         <string>82Y</string>
+        </property>
+       </widget>
+      </item>
+      <item row="12" column="0">
+       <widget class="QLabel" name="label_16">
+        <property name="text">
+         <string>TN210Y</string>
+        </property>
+       </widget>
+      </item>
+      <item row="12" column="1">
+       <widget class="QLabel" name="TINTA12">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0">
+       <widget class="QLabel" name="label_13">
+        <property name="text">
+         <string>TN210C</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="2">
+       <widget class="QLabel" name="label_38">
+        <property name="text">
+         <string>TN611K</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="0">
+       <widget class="QLabel" name="label_14">
+        <property name="text">
+         <string>TN210K</string>
+        </property>
+       </widget>
+      </item>
+      <item row="13" column="0">
+       <widget class="QLabel" name="label_43">
+        <property name="text">
+         <string>TN211C</string>
+        </property>
+       </widget>
+      </item>
+      <item row="20" column="0">
+       <widget class="QLabel" name="label_50">
+        <property name="text">
+         <string>TN213Y</string>
+        </property>
+       </widget>
+      </item>
+      <item row="13" column="1">
+       <widget class="QLabel" name="TINTA13">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="14" column="1">
+       <widget class="QLabel" name="TINTA14">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="15" column="1">
+       <widget class="QLabel" name="TINTA15">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="16" column="1">
+       <widget class="QLabel" name="TINTA16">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="17" column="1">
+       <widget class="QLabel" name="TINTA17">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="18" column="1">
+       <widget class="QLabel" name="TINTA18">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="19" column="1">
+       <widget class="QLabel" name="TINTA19">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="20" column="1">
+       <widget class="QLabel" name="TINTA20">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="13" column="2">
+       <widget class="QLabel" name="label_59">
+        <property name="text">
+         <string>TNP22C</string>
+        </property>
+       </widget>
+      </item>
+      <item row="14" column="2">
+       <widget class="QLabel" name="label_60">
+        <property name="text">
+         <string>TNP22K</string>
+        </property>
+       </widget>
+      </item>
+      <item row="15" column="2">
+       <widget class="QLabel" name="label_61">
+        <property name="text">
+         <string>TNP22M</string>
+        </property>
+       </widget>
+      </item>
+      <item row="16" column="2">
+       <widget class="QLabel" name="label_62">
+        <property name="text">
+         <string>TNP22Y</string>
+        </property>
+       </widget>
+      </item>
+      <item row="17" column="2">
+       <widget class="QLabel" name="label_63">
+        <property name="text">
+         <string>TNP44C</string>
+        </property>
+       </widget>
+      </item>
+      <item row="18" column="2">
+       <widget class="QLabel" name="label_64">
+        <property name="text">
+         <string>TNP44K</string>
+        </property>
+       </widget>
+      </item>
+      <item row="19" column="2">
+       <widget class="QLabel" name="label_65">
+        <property name="text">
+         <string>TNP44M</string>
+        </property>
+       </widget>
+      </item>
+      <item row="20" column="2">
+       <widget class="QLabel" name="label_66">
+        <property name="text">
+         <string>TNP44Y</string>
+        </property>
+       </widget>
+      </item>
+      <item row="13" column="3">
+       <widget class="QLabel" name="TINTA33">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="14" column="3">
+       <widget class="QLabel" name="TINTA34">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="15" column="3">
+       <widget class="QLabel" name="TINTA35">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="16" column="3">
+       <widget class="QLabel" name="TINTA36">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="17" column="3">
+       <widget class="QLabel" name="TINTA37">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="18" column="3">
+       <widget class="QLabel" name="TINTA38">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="19" column="3">
+       <widget class="QLabel" name="TINTA39">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="20" column="3">
+       <widget class="QLabel" name="TINTA40">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -29,17 +29,20 @@ SOURCES += main.cpp\
     sockettcp.cpp \
     controlip.cpp \
     direcciones.cpp \
-    controlimpresoras.cpp
+    controlimpresoras.cpp \
+    stockimpresoras.cpp
 
 HEADERS  += controlpanel.h \
     sockettcp.h \
     controlip.h \
     direcciones.h \
-    controlimpresoras.h
+    controlimpresoras.h \
+    stockimpresoras.h
 
 FORMS    += controlpanel.ui \
     controlip.ui \
-    controlimpresoras.ui
+    controlimpresoras.ui \
+    stockimpresoras.ui
 
 DISTFILES += \
     Images/ips.jpg
